@@ -1,6 +1,8 @@
+/* Default Screen Size */
+
 .container{
   display:grid;
-  border: 1px solid red;
+  border: 5px solid red;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 50px 80vh 25px;
   grid-template-areas: 
@@ -10,26 +12,65 @@
   "ft";
 }
 
+body{
+  background-color: #444;
+}
+
 .box{
- 
+  color:white;
 }
 
 .header{
-  border: 1px solid green;
+  background-color: green;
   grid-area: hd;
 }
 
 .side-bar{
-  border: 1px solid purple;
+  background-color: purple;
   grid-area: sd;
 }
 
 .content{
-  border: 1px solid yellow;
+  color: black;
+  background-color: yellow;
   grid-area: cn;
 }
 
 .footer{
-  border: 1px solid blue;
+  background-color: blue;
   grid-area: ft;
+}
+
+/* Medium  Screens */
+@media(min-width:600px) and (max-width: 900px){
+
+  .container{
+    display:grid;
+    border: 5px solid orange;
+    grid-template-columns: repeat(8,10vw);
+    grid-template-rows: 100px 45vh 45vh 25px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd hd"
+    "sd sd sd cn cn cn cn cn cn cn"
+    "sd sd sd cn cn cn cn cn cn cn"
+    "ft ft ft ft ft ft ft ft ft ft";
+  }
+
+}
+
+/* Large Screens */
+@media(min-width: 901px){
+
+  .container{
+    display:grid;
+    border: 5px solid aqua;
+    grid-template-columns: repeat(8,10vw);
+    grid-template-rows: 100px 45vh 45vh 25px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd hd"
+    "sd cn cn cn cn cn cn cn cn cn"
+    "sd cn cn cn cn cn cn cn cn cn"
+    "ft ft ft ft ft ft ft ft ft ft";
+  }
+
 }
