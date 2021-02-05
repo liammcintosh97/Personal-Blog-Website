@@ -1,0 +1,35 @@
+@import url("designSystem.css");
+
+.nav-card{
+  background-color: var(--mid);
+  color: var(--white);
+
+  box-shadow: 2.5px 5px 15px var(--black);
+  width: 30%;
+  height: 75%;
+  margin: 17px 5px 7px 5px;
+  text-align: center;
+  padding: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.nav-card:hover{
+  width: 35%;
+  height: 80%;
+}
+
+.lifestyle{
+  background-image: url("../images/cacti.jpeg");
+}
+
+.travel{
+  background-image: url("../images/japan_village.jpeg");
+}
+
+.food{
+  background-image: url("../images/sourdough.jpeg");
+}

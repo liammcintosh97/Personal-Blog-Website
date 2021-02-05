@@ -1,43 +1,49 @@
-/* Default Screen Size */
+@import url("designSystem.css");
+@import url("navCard.css");
 
+/* Default Screen Size */
 .container{
   display:grid;
-  border: 5px solid red;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 50px 80vh 25px;
+  grid-template-rows: 100px 200px 90vh 100px;
   grid-template-areas: 
   "hd"
-  "sd"
+  "nv"
   "cn"
   "ft";
 }
 
-body{
-  background-color: #444;
-}
-
 .box{
-  color:white;
+  color:var(--white);
 }
 
 .header{
-  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main);
+  color: var(--high-light);
   grid-area: hd;
 }
 
-.side-bar{
-  background-color: purple;
-  grid-area: sd;
+.nav-bar{
+  background-color: var(--grey);
+  grid-area: nv;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content{
-  color: black;
-  background-color: yellow;
+  color: var(--black);
+  background-color: var(--white);
   grid-area: cn;
+  width: 95%;
+  justify-self: center;
 }
 
 .footer{
-  background-color: blue;
+  background-color: var(--main);
   grid-area: ft;
 }
 
@@ -46,13 +52,12 @@ body{
 
   .container{
     display:grid;
-    border: 5px solid orange;
     grid-template-columns: repeat(8,10vw);
     grid-template-rows: 100px 45vh 45vh 25px;
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd hd hd"
-    "sd sd sd cn cn cn cn cn cn cn"
-    "sd sd sd cn cn cn cn cn cn cn"
+    "nv nv nv cn cn cn cn cn cn cn"
+    "nv nv nv cn cn cn cn cn cn cn"
     "ft ft ft ft ft ft ft ft ft ft";
   }
 
@@ -63,13 +68,13 @@ body{
 
   .container{
     display:grid;
-    border: 5px solid aqua;
+
     grid-template-columns: repeat(8,10vw);
     grid-template-rows: 100px 45vh 45vh 25px;
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd hd hd"
-    "sd cn cn cn cn cn cn cn cn cn"
-    "sd cn cn cn cn cn cn cn cn cn"
+    "nv cn cn cn cn cn cn cn cn cn"
+    "nv cn cn cn cn cn cn cn cn cn"
     "ft ft ft ft ft ft ft ft ft ft";
   }
 
