@@ -1,35 +1,65 @@
 @import url("designSystem.css");
 
 .nav-card{
+  display: flex;
+  width: 40%;
+  height: 50%;
+  margin: 7px 1.5% 7px 1.5%;
+  padding: 5px;
   background-color: var(--mid);
   color: var(--white);
-
-  box-shadow: 2.5px 5px 15px var(--black);
-  width: 30%;
-  height: 75%;
-  margin: 17px 5px 7px 5px;
-  text-align: center;
-  padding: 5px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
+  border-radius: 5px;
+  font-size: smaller;
+  box-shadow: 2.5px 5px 15px var(--black);
+  /*TODO - Fix transitoin lag */
+  transition: width 0.4s, height 0.4s;
 }
 
 .nav-card:hover{
-  width: 35%;
-  height: 80%;
+  width: 50%;
+  height: 55%;
 }
 
-.lifestyle{
-  background-image: url("../images/cacti.jpeg");
-}
+@media(min-width:600px){
 
-.travel{
-  background-image: url("../images/japan_village.jpeg");
-}
+  .nav-card{
+    display:unset;
+    width: 40%;
+    height: 75%;
+    margin: 7px 1% 7px 1%;
+    text-align: center;
+    font-size: unset;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 
-.food{
-  background-image: url("../images/sourdough.jpeg");
+  .nav-card:hover{
+    width: 50%;
+    height: 85%;
+  }
+
+  .lifestyle{
+    background-image: url("../images/cacti.jpg");
+  }
+
+  .travel{
+    background-image: url("../images/plane_seats.jpg");
+  }
+
+  .food{
+    background-image: url("../images/sourdough.jpg");
+  }
+
+  .tech{
+    background-image: url("../images/macbook.jpg");
+  }
+
+  .fitness{
+    background-image: url("../images/running.jpg ");
+  }
 }

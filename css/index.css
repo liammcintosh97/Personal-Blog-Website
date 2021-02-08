@@ -1,11 +1,11 @@
-@import url("designSystem.css");
+@import url("root.css");
 @import url("navCard.css");
 
 /* Default Screen Size */
 .container{
   display:grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 200px 90vh 100px;
+  grid-template-rows: 100px 75px 90vh 100px;
   grid-template-areas: 
   "hd"
   "nv"
@@ -15,6 +15,7 @@
 
 .box{
   color:var(--white);
+ 
 }
 
 .header{
@@ -43,8 +44,11 @@
 }
 
 .footer{
+  display: flex;
   background-color: var(--main);
   grid-area: ft;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Medium  Screens */
@@ -53,11 +57,11 @@
   .container{
     display:grid;
     grid-template-columns: repeat(8,10vw);
-    grid-template-rows: 100px 45vh 45vh 25px;
+    grid-template-rows: 100px 125px 80vh 75px;
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd hd hd"
-    "nv nv nv cn cn cn cn cn cn cn"
-    "nv nv nv cn cn cn cn cn cn cn"
+    "nv nv nv nv nv nv nv nv nv nv"
+    "cn cn cn cn cn cn cn cn cn cn"
     "ft ft ft ft ft ft ft ft ft ft";
   }
 
@@ -68,13 +72,12 @@
 
   .container{
     display:grid;
-
     grid-template-columns: repeat(8,10vw);
-    grid-template-rows: 100px 45vh 45vh 25px;
+    grid-template-rows: 100px 225px 80vh 75px;
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd hd hd"
-    "nv cn cn cn cn cn cn cn cn cn"
-    "nv cn cn cn cn cn cn cn cn cn"
+    "nv nv nv nv nv nv nv nv nv nv"
+    "cn cn cn cn cn cn cn cn cn cn"
     "ft ft ft ft ft ft ft ft ft ft";
   }
 
