@@ -1,21 +1,20 @@
 @import url("root.css");
-@import url("navCard.css");
+@import url("navcard.css");
+@import url("content.css");
+@import url("blogcard.css");
+@import url("socialicon.css");
+@import url("archive.css");
 
-/* Default Screen Size */
+/* default screen size */
 .container{
   display:grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 75px 90vh 100px;
+  grid-template-rows: 100px 80px 1fr 75px;
   grid-template-areas: 
   "hd"
   "nv"
   "cn"
   "ft";
-}
-
-.box{
-  color:var(--white);
- 
 }
 
 .header{
@@ -51,13 +50,13 @@
   justify-content: center;
 }
 
-/* Medium  Screens */
+/* medium  screens */
 @media(min-width:600px) and (max-width: 900px){
 
   .container{
     display:grid;
     grid-template-columns: repeat(8,10vw);
-    grid-template-rows: 100px 125px 80vh 75px;
+    grid-template-rows: 100px 125px 1fr 75px;
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd hd hd"
     "nv nv nv nv nv nv nv nv nv nv"
@@ -67,13 +66,13 @@
 
 }
 
-/* Large Screens */
+/* large screens */
 @media(min-width: 901px){
 
   .container{
     display:grid;
     grid-template-columns: repeat(8,10vw);
-    grid-template-rows: 100px 225px 80vh 75px;
+    grid-template-rows: 100px 225px 1fr 75px;
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd hd hd"
     "nv nv nv nv nv nv nv nv nv nv"

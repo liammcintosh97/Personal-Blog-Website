@@ -1,0 +1,10 @@
+.blog-date-time{
+  font-size: smaller;
+  margin-left: 5px;
+  justify-content: center;
+  align-content: center;
+}
+
+.blog-date-time > p{
+  margin: 1px 0px 1px 0px;
+}

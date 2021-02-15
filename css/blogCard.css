@@ -1,0 +1,82 @@
+@import url("blogtag.css");
+@import url('blogdatetime.css');
+@import url('blogicon.css');
+
+.blog-card{
+  color: var(--black);
+  text-decoration: none;
+  width: 500px;
+  height: 500px;
+  margin: 15px;
+  border-radius: 5px;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows:  1fr 75px;
+  grid-template-areas: 
+  "im tx"
+  "im tg"
+ ;
+}
+
+/*blog card images */
+
+.blog-card-image{
+  border-radius: 5px 0px 0px 5px;
+  grid-area: im;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blog-card-image.japan{
+  background-image: url("../images/japan_village.jpeg");
+}
+
+.blog-card-image.sourdough{
+  background-image: url("../images/sourdough_2.jpg");
+}
+
+.blog-card-image.succulents{
+  background-image: url("../images/mini-succulents.jpg");
+}
+
+.blog-card-image.macbook{
+  background-image: url("../images/macbook_2.jpeg");
+}
+
+.blog-card-image.running{
+  background-image: url("../images/melbourne_running.jpg");
+}
+
+
+/*blog card content */
+
+.blog-card-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-area: tx;
+  padding:15px;
+  overflow:hidden;
+  align-items:center;
+}
+
+/* blog card link styling */
+
+.blog-card:link {
+  color: var(--black);
+}
+
+.blog-card:visited {
+  color: var(--black);
+}
+
+.blog-card:hover {
+  box-shadow: 0px 0px 18px var(--black);
+}
+
+.blog-card:active {
+  color: var(--black);
+}
+

@@ -1,0 +1,59 @@
+.blog-tag-container{
+  display: flex;
+  grid-area: tg;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.blog-tag{
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: var(--grey);
+}
+
+/* tag toggles */
+
+.blog-tag.lifestyle.off{
+  border: 2px solid var(--life-style-color);
+}
+.blog-tag.lifestyle.on{
+  background-color: var(--life-style-color);
+  border: 2px solid var(--life-style-color);
+}
+
+.blog-tag.travel.off{
+  border: 2px solid var(--travel-color);
+}
+.blog-tag.travel.on{
+  border: 2px solid var(--travel-color);
+  background-color: var(--travel-color);
+}
+
+
+.blog-tag.food.off{
+  border: 2px solid var(--food-color);
+}
+.blog-tag.food.on{
+  border: 2px solid var(--food-color);
+  background-color: var(--food-color);
+}
+
+.blog-tag.tech.off{
+  border: 2px solid var(--tech-color);
+}
+.blog-tag.tech.on{
+  border: 2px solid var(--tech-color);
+  background-color: var(--tech-color);
+}
+
+.blog-tag.fitness.off{
+  border: 2px solid var(--fitness-color);
+}
+.blog-tag.fitness.on{
+  border: 2px solid var(--fitness-color);
+  background-color: var(--fitness-color);
+}
+
+

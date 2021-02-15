@@ -1,4 +1,4 @@
-@import url("designSystem.css");
+@import url("designsystem.css");
 
 .nav-card{
   display: flex;
@@ -11,12 +11,34 @@
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+  font-family: Helvetica;
   border-radius: 5px;
   font-size: smaller;
   box-shadow: 2.5px 5px 15px var(--black);
-  /*TODO - Fix transitoin lag */
+  /*todo - fix transitoin lag */
   transition: width 0.4s, height 0.4s;
 }
+
+.nav-card.nav-card.fitness{
+  border: 2px solid var(--fitness-color)
+}
+
+.nav-card.food{
+  border: 2px solid var(--food-color)
+}
+
+.nav-card.lifestyle{
+  border: 2px solid var(--life-style-color)
+}
+
+.nav-card.tech{
+  border: 2px solid var(--tech-color)
+}
+
+.nav-card.nav-card.nav-card.travel{
+  border: 2px solid var(--travel-color)
+}
+
 
 .nav-card:hover{
   width: 50%;
@@ -43,23 +65,23 @@
     height: 85%;
   }
 
-  .lifestyle{
+  .nav-card.lifestyle{
     background-image: url("../images/cacti.jpg");
   }
 
-  .travel{
+  .nav-card.travel{
     background-image: url("../images/plane_seats.jpg");
   }
 
-  .food{
+  .nav-card.food{
     background-image: url("../images/sourdough.jpg");
   }
 
-  .tech{
+  .nav-card.tech{
     background-image: url("../images/macbook.jpg");
   }
 
-  .fitness{
+  .nav-card.fitness{
     background-image: url("../images/running.jpg ");
   }
 }

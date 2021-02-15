@@ -1,0 +1,65 @@
+.archive{
+  margin-left: 25px;
+}
+
+.archive.horizontal{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.archive.horizontal > .date-picker{
+  margin-left: 25px;
+}
+
+
+.archive.vertical{
+  display: none;
+}
+
+.archive ul li{
+  color: var(--main)
+}
+
+.archive h2{
+  margin-bottom: 0px;
+}
+
+.archive p{
+  margin-top: 5px;
+}
+
+/* unvisited link */
+.archive a:link {
+  color: var(--grey);
+  text-decoration: none;
+}
+
+
+/* visited link */
+.archive  a:visited {
+  color: var(--mid);
+}
+
+/* mouse over link */
+.archive  a:hover {
+  color: var(--high-light);
+}
+
+/* selected link */
+.archive  a:active {
+  color: var(--main2);
+}
+
+
+/* large screens */
+@media(min-width: 901px){
+
+  .archive.horizontal{
+    display: none;
+  }
+
+  .archive.vertical{
+    display: unset;
+  }
+}

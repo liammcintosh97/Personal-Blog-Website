@@ -1,14 +1,20 @@
-/* Colour Pallete */
+/* colour pallete */
 :root{
   
   --black: #0d141c;
-  --grey: #D6d6d6;
+  --grey: #d6d6d6;
   --white: #ffffff;
   --main: #355070;
   --main2: #6d597a;
   --high-light: #e56b6f;
   --high-light2: #b56576;
   --mid: #eaac8d;
+
+  --life-style-color:#ffbe0b;
+  --travel-color: #fb5607;
+  --food-color: #ff006e;
+  --tech-color: #8338ec;
+  --fitness-color: #3a86ff;
 }
 
 html,
@@ -17,4 +23,59 @@ body{
   width: 100%;
   height: 100%;
   background-color: var(--grey);
+  overscroll-behavior: none;
 }
+
+input{
+  height: 50px;
+  border: 2px solid var(--grey);
+  border-radius: 5px;
+  outline: none
+}
+
+input:hover{
+  border-color: var(--high-light);
+}
+
+input:active{
+  border: 2px solid var(--high-light);
+}
+
+input:focus{
+  border: 2px solid var(--high-light);
+}
+
+input:active:focus{
+  border: 2px solid var(--high-light);
+}
+
+input[type=submit]{
+  height: 52px;
+  width: 100px;
+}
+
+.back-link{
+  height: 46px;
+  width: 86px;
+  padding: 1px 6px 1px 6px;
+  border-radius: 5px;
+  background-color: var(--white);
+  color: black;
+  border: 2px solid var(--grey);
+  text-decoration: none;
+  text-align: center;
+  line-height: 46px;
+}
+
+.back-link:hover{
+  border: 2px solid var(--high-light);
+}
+
+p,li{
+  font-family: Georgia
+}
+
+h1,h2,h3,h4{
+  font-family: Garamond;
+}
+

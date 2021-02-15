@@ -1,0 +1,163 @@
+@import url("root.css");
+@import url("socialicon.css");
+@import url('blogtag.css');
+@import url('blogdatetime.css');
+@import url('blogicon.css');
+@import url('blogauthorinfo.css');
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 150px 1fr 75px;
+  grid-template-areas: 
+  "hd hd"
+  "tb tb"
+  "cn cn"
+  "ft ft";
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.header{
+  grid-area: hd;
+  background-image: url("../images/japan_village.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 25px;
+}
+
+/* content */
+
+.content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  grid-area: cn;
+  padding: 75px 50px 25px 50px;
+}
+
+.content > .blog-page-figure{
+  margin: 0px 0px 15px 0px;
+  width: 100%;
+}
+
+/* sections */
+
+.section{
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 15px 0px;
+}
+
+.section p{
+  margin: 0px 25px 0px 0px;
+  width: 50%;
+}
+
+.footer{
+  display: flex;
+  grid-area: ft;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main);
+}
+
+.blog-icon-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-info .blog-author-info{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.blog-info .blog-tag-container{
+  margin-top: 5px;
+}
+
+/* title */
+
+.title{
+  display: flex;
+  color: var(--white);
+  align-items: center;
+}
+
+.title > h1{
+  margin: 0px;
+  justify-self: center;
+  margin-right: auto;
+}
+
+.title > .back-link{
+  margin-right: auto;
+}
+
+.top-bar{
+  grid-area: tb;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px 50px 25px 50px;
+  width: 500px;
+  align-items: center;
+}
+
+.top-bar .blog-tag-container{
+  padding-top: 0px;
+}
+
+.blog-icon{
+  width:75px;
+  height: 75px;
+}
+
+/* blog page images */
+
+.blog-page-figure{
+  width: 50%;
+  background-color: var(--grey);
+  border: 5px solid var(--grey);
+  border-radius: 5px;
+  align-self: flex-start;
+  margin: 15px 0px 0px 0px;
+}
+
+.blog-page-image{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.blog-page-figure-caption{
+  padding: 5px 0px 5px 5px
+}
+
+
+/* small  screens */
+@media(max-width:900px){
+  .section{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .section p{
+    width: 100%;
+  }
+
+  .blog-page-figure{
+    width: 100%;
+  }
+}

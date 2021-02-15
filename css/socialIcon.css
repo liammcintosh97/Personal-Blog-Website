@@ -23,32 +23,32 @@
   background-size: 60% 60%;
 }
 
-/*Facebook*/
+/*facebook*/
 #facebook{
   background-image: url("../images/logos/facebook_logo.png");
 }
-#facebook:hover{
+ #facebook:hover{
   background-image: url("../images/logos/facebook_logo_hover.png");
 }
 
-/*Instagram*/
-#instagram{
+/*instagram*/
+ #instagram{
   background-image: url("../images/logos/instagram_logo.png");
 }
-#instagram:hover{
+ #instagram:hover{
   background-image: url("../images/logos/instagram_logo_hover.png");
 }
 
-/*Pinterest*/
+/*pinterest*/
 #pinterest{
   background-image: url("../images/logos/pinterest_logo.png");
 }
-#pinterest:hover{
+ #pinterest:hover{
   background-image: url("../images/logos/pinterest_logo_hover.png");
 }
 
-/*Twitter*/
-#twitter{
+/*twitter*/
+ #twitter{
   background-image: url("../images/logos/twitter_logo.png");
 }
 #twitter:hover{
