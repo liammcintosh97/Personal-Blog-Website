@@ -8,7 +8,7 @@
 .container{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 300px 150px 1fr 75px;
+  grid-template-rows: 300px 200px 1fr 75px;
   grid-template-areas: 
   "hd hd"
   "tb tb"
@@ -85,20 +85,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .blog-info{
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .blog-info .blog-author-info{
   margin-top: 0px;
   margin-bottom: 0px;
+  width: 100%;
 }
 
 .blog-info .blog-tag-container{
   margin-top: 5px;
+  height: 100%;
 }
 
 /* title */
@@ -125,7 +129,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding: 25px 50px 25px 50px;
-  width: 500px;
   align-items: center;
 }
 
@@ -178,5 +181,30 @@
 
   .blog-page-figure{
     width: 100%;
+  }
+}
+
+
+/* Very small screens */
+@media(max-width:600px){
+  .top-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .container{
+    grid-template-rows: 300px 250px 1fr 75px;
+    font-size: small;
+  }
+
+  .blog-icon-container{
+    flex-direction: row;
+  }
+
+  .content{
+    padding-top: 25px ;
   }
 }

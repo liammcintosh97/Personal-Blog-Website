@@ -80,3 +80,14 @@
   color: var(--black);
 }
 
+
+
+/* small  screens */
+@media(max-width:500px){
+
+  .blog-card{
+    width: 80%;
+    height: 400px
+  }
+
+}

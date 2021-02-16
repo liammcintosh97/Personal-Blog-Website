@@ -1,14 +1,14 @@
 @import url("root.css");
-@import url("navcard.css");
+@import url("navCard.css");
 @import url("content.css");
-@import url("blogcard.css");
-@import url("socialicon.css");
+@import url("blogCard.css");
+@import url("socialIcon.css");
 @import url("archive.css");
 
 /* default screen size */
 .container{
   display:grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
   grid-template-rows: 100px 80px 1fr 75px;
   grid-template-areas: 
   "hd"
@@ -50,18 +50,19 @@
   justify-content: center;
 }
 
+/* Very Small Screens */
+@media(max-width:400px){
+  .container{
+    font-size: small;
+  }
+}
+
 /* medium  screens */
 @media(min-width:600px) and (max-width: 900px){
 
   .container{
     display:grid;
-    grid-template-columns: repeat(8,10vw);
     grid-template-rows: 100px 125px 1fr 75px;
-    grid-template-areas: 
-    "hd hd hd hd hd hd hd hd hd hd"
-    "nv nv nv nv nv nv nv nv nv nv"
-    "cn cn cn cn cn cn cn cn cn cn"
-    "ft ft ft ft ft ft ft ft ft ft";
   }
 
 }
@@ -71,13 +72,7 @@
 
   .container{
     display:grid;
-    grid-template-columns: repeat(8,10vw);
     grid-template-rows: 100px 225px 1fr 75px;
-    grid-template-areas: 
-    "hd hd hd hd hd hd hd hd hd hd"
-    "nv nv nv nv nv nv nv nv nv nv"
-    "cn cn cn cn cn cn cn cn cn cn"
-    "ft ft ft ft ft ft ft ft ft ft";
   }
 
 }
