@@ -1,6 +1,6 @@
-@import url("blogtag.css");
-@import url('blogdatetime.css');
-@import url('blogicon.css');
+@import url("blogTag.css");
+@import url('blogDateTime.css');
+@import url('blogIcon.css');
 
 .blog-card{
   color: var(--black);

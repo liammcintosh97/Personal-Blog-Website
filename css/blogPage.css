@@ -1,9 +1,9 @@
 @import url("root.css");
-@import url("socialicon.css");
-@import url('blogtag.css');
-@import url('blogdatetime.css');
-@import url('blogicon.css');
-@import url('blogauthorinfo.css');
+@import url("socialIcon.css");
+@import url('blogTag.css');
+@import url('blogDateTime.css');
+@import url('blogIcon.css');
+@import url('blogAuthorInfo.css');
 
 .container{
   display: grid;
@@ -55,7 +55,22 @@
 
 .section p{
   margin: 0px 25px 0px 0px;
+}
+
+.section-text{
+  display: flex;
+  flex-direction: column;
   width: 50%;
+}
+
+/* Blockquote */
+
+.section-text > blockquote{
+  width: 80%;
+  align-self: center;
+  background-color: var(--grey);
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .footer{
@@ -127,8 +142,8 @@
 
 .blog-page-figure{
   width: 50%;
-  background-color: var(--grey);
-  border: 5px solid var(--grey);
+  background-color: var(--mid);
+  border: 5px solid var(--mid);
   border-radius: 5px;
   align-self: flex-start;
   margin: 15px 0px 0px 0px;
@@ -148,9 +163,13 @@
 
 /* small  screens */
 @media(max-width:900px){
-  .section{
+  .section-text{
     flex-direction: column;
     width: 100%;
+  }
+
+  .section{
+    flex-direction: column;
   }
 
   .section p{
