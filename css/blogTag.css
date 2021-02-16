@@ -6,8 +6,8 @@
 }
 
 .blog-tag{
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   margin: 5px;
   border-radius: 15px;
   background-color: var(--grey);
@@ -56,4 +56,12 @@
   background-color: var(--fitness-color);
 }
 
+/* small  screens */
+@media(max-width:500px){
 
+  .blog-tag{
+    width: 10px;
+    height: 10px;
+  }
+
+}
